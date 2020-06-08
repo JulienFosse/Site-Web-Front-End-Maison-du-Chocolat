@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap");
+$colorpink: rgb(224,
+47,
+130);
+$fontfamily: "Crete Round",
+serif;
+$menucolor: rgb(75,
+75,
+75);
+@media screen and (max-width: 992px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        header {
+            ul {
+                padding: 0px !important;
+            }
+        }
+        .part2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//   HEADER //////////////////////////////////////////////////////
+header {
+    display: flex;
+    justify-content: space-evenly;
+    height: 120px;
+    h1 {
+        font-family: $fontfamily;
+        width: 400px;
+        text-align: center;
+        span {
+            color: $colorpink;
+        }
+    }
+    .menu {
+        font-weight: bold;
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            li {
+                margin: 10px 50px 21px 0px;
+                a {
+                    font-family: $fontfamily;
+                    color: $menucolor;
+                    font-size: 17px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+//   PART 1 //////////////////////////////////////////////////////
+.part1 {
+    height: 700px;
+    background-image: url(./assets/images/main.jpg);
+    .titlepart1 {
+        color: white;
+        font-size: 30px;
+        font-family: $fontfamily;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 400px;
+        span {
+            font-weight: normal;
+            font-size: 65px;
+        }
+    }
+    .button {
+        color: white;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            text-decoration: none;
+            color: white;
+            border: solid;
+            border-color: $colorpink;
+            border-radius: 5px;
+            padding: 13px 25px;
+            background-color: $colorpink;
+            font-size: 22px;
+        }
+    }
+}
+
+//   Part 2 //////////////////////////////////////////////////////
+.part2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-family: $fontfamily;
+    color: $menucolor;
+    margin-top: 80px;
+    margin-bottom: 35px;
+    margin: 80px 150px 35px 150px;
+    .logo {
+        display: flex;
+        #parts2 {
+            width: 300px;
+            img {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+// Part 3 ////////////////////////////////////////////////////////
+.part3 {
+    background-color: rgb(170, 170, 170);
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .bloc1 {
+        margin-right: 50px;
+        background-image: url(./assets/images/article-image-1.jpg);
+        border-radius: 10px;
+    }
+    .bloc2 {
+        background-image: url(./assets/images/article-image-2.jpg);
+        border-radius: 10px;
+    }
+    .blocs {
+        width: 460px;
+        height: 270px;
+        border-radius: 20px;
+        .textblocs {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: white;
+            width: 140px;
+            height: 270px;
+            padding: 0 20px;
+            border-radius: 10px 0px 0px 10px;
+            color: $menucolor;
+            background: linear-gradient( rgba(255, 255, 255, 0.9) rgba(255, 255, 255, 0.9));
+            h2 {
+                font-family: $fontfamily;
+                font-size: 30px;
+            }
+            p {
+                font-family: $fontfamily;
+            }
+            .buttonblocs {
+                border: solid;
+                border-color: $colorpink;
+                background-color: $colorpink;
+                border-radius: 5px;
+                padding: 7px 7px;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-family: $fontfamily;
+                }
+            }
+            .linetextblocs {
+                height: 2px;
+                width: 80px;
+                background-color: $menucolor;
+            }
+        }
+    }
+}
+
+// Part 3 /////////////////////////////////////////////////////////
+.part4 {
+    // text-align: center;
+    font-family: $fontfamily;
+    color: $menucolor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 45vh;
+    .titlepart4 {
+        font-size: 25px;
+    }
+    .linepart4 {
+        height: 3px;
+        width: 120px;
+        background-color: rgb(89, 178, 194);
+    }
+    form {
+        display: flex;
+        .name {
+            margin: 20px 20px;
+            font-size: 25px;
+        }
+        .email {
+            margin: 20px 20px;
+            font-size: 25px;
+        }
+        .buttonpart4 {
+            border: solid;
+            color: $colorpink;
+            margin: 20px 20px;
+            background-color: $colorpink;
+            border-radius: 5px;
+            a {
+                text-decoration: none;
+                color: white;
+                padding: 5px 5px;
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+// Part 5 ////////////////////////////////////////////////////////
+.part5 {
+    text-align: center;
+    background-color: $menucolor;
+    height: 30vh;
+    font-family: $fontfamily;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .titlepart5 {
+        color: white;
+        font-size: 25px;
+        span {
+            color: $colorpink;
+        }
+    }
+    .copyright {
+        color: rgb(160, 160, 160);
+    }
+}
